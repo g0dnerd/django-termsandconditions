@@ -13,7 +13,7 @@
     <section id="termsandconditions-section" title="{% trans 'Terms and Conditions' %}" data-role="content">
         {{ form.errors }}
         {% for terms in form.initial.terms %}
-            <h1>{% trans 'Please Accept' %} {{ terms.name|safe }} {{ terms.version_number|safe }}</h1>
+            <h1>{% trans 'Please Accept' %} {{ terms.name|safe }} version {{ terms.version_number|safe }}</h1>
             {% if terms.info %}
                 <h4>{% trans 'Summary of Changes' %}</h4>
                 <div class="toc-container">
