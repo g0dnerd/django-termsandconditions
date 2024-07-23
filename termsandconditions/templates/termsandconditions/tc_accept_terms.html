@@ -21,7 +21,7 @@
                         {{ form.returnTo }}
                         <p>
                             <input type="submit"
-                                value="{% trans 'I have read and I accept' %} {% trans 'the terms of the' %} {{ terms.name|safe }} {% if form.initial.terms|length > 1 %} {% trans 'All' %}{% endif %}"
+                                value="{% trans 'I accept the terms of the' %} {{ terms.name|safe }} {% if form.initial.terms|length > 1 %} {% trans 'All' %}{% endif %}"
                                 data-role="button">
                         </p>
                     </form>
