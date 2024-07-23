@@ -1,13 +1,8 @@
 {% extends terms_base_template %}
 
-{% load static %}
-{% load i18n %}
+{% load i18n static static_version %}
 
 {% block title %}{% trans 'Accept Terms and Conditions' %}{% endblock %}
-{% block styles %}
-    {{ block.super }}
-    <link href="{% static 'termsandconditions/css/view_accept.css' %}" rel="stylesheet">
-{% endblock %}
 
 {% block content %}
     <section id="termsandconditions-section" title="{% trans 'Terms and Conditions' %}" data-role="content">
