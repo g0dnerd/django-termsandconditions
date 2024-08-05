@@ -3,6 +3,8 @@
 from django.contrib.auth.models import User
 from django.db import IntegrityError
 
+from django.core.cache import cache
+
 from .forms import UserTermsAndConditionsModelForm, EmailTermsForm
 from .models import TermsAndConditions, UserTermsAndConditions
 from django.conf import settings
@@ -19,6 +21,7 @@ from smtplib import SMTPException
 LOGGER = logging.getLogger(name="termsandconditions")
 DEFAULT_TERMS_BASE_TEMPLATE = "base.html"
 DEFAULT_TERMS_IP_HEADER_NAME = "REMOTE_ADDR"
+TERMS_CACHE_SECONDS = getattr(settings, "TERMS_CACHE_SECONDS", 30)
 
 
 class GetTermsViewMixin:
@@ -132,6 +135,18 @@ class AcceptTermsView(CreateView, GetTermsViewMixin):
                     ip_address=ip_address,
                 )
                 new_user_terms.save()
+                not_agreed_terms = (
+                    TermsAndConditions.get_active_terms_list()
+                    .exclude(
+                        userterms__in=UserTermsAndConditions.objects.filter(user=user)
+                    )
+                    .order_by("slug")
+                )
+                cache.set(
+                    "tandc.not_agreed_terms_" + user.get_username(),
+                    not_agreed_terms,
+                    TERMS_CACHE_SECONDS,
+                )
             except IntegrityError:  # pragma: nocover
                 pass
 
