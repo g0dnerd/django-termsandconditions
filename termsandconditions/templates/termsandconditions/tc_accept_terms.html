@@ -7,13 +7,13 @@
 {% block content %}
     <section id="termsandconditions-section" title="{% trans 'Terms and Conditions' %}" data-role="content">
         {{ form.errors }}
-        <h1>{% trans 'Please accept our terms and conditions' %}</h1>
+        <h1>{% trans 'Terms and conditions' %}</h1>
         <ul>
             <li>
                 {% for terms in form.initial.terms %}
                     <h2>{% trans 'Please accept our' %} 
                         <a href="{% url 'tc_view_specific_version_page' terms.slug|safe terms.version_number|safe %}">{{ terms.name|safe }}</a>
-                        {% trans 'version' %} {{ terms.version_number|safe }}
+                        {% trans 'version' %} {{ terms.version_number|floatformat:0|safe }}
                     </h2>
                     <form action="{% url 'tc_accept_page' %}" method="post" id="tc-terms-form" data-ajax="false">
                         {% csrf_token %}
