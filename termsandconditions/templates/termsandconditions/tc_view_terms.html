@@ -13,13 +13,11 @@
     <section title="{% trans 'Terms and Conditions' %}" data-role="content">
         {% for terms in terms_list %}
             {% if terms %}
-                <h1>{{ terms.name|safe }} {{ terms.version_number|safe }}</h1>
+                <h1>{% trans terms.name|safe %} {% trans 'version' %} {{ terms.version_number|floatformat:0|safe }}</h1>
 
                 <div class="toc-container">
                     {{ terms.text|safe }}
                 </div>
-                <p><a href="{% url 'tc_print_page' terms.slug|safe terms.version_number|safe %}"
-                      target="_blank" rel="noopener noreferrer">{% trans 'Print' %} {{ terms.name|safe }}</a></p>
             {% else %}
                 <h1>{% trans "No terms defined." %}</h1>
             {% endif %}
