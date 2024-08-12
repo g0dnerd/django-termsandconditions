@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-12 01:07-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: termsandconditions/admin.py:17 termsandconditions/apps.py:14
+#: termsandconditions/models.py:95 termsandconditions/models.py:96
+#: termsandconditions/templates/termsandconditions/tc_accept_terms.html:8
+#: termsandconditions/templates/termsandconditions/tc_email_terms_form.html:8
+#: termsandconditions/templates/termsandconditions/tc_view_terms.html:13
+msgid "Terms and Conditions"
+msgstr ""
+
+#: termsandconditions/models.py:28
+msgid "user"
+msgstr "Benutzer"
+
+#: termsandconditions/models.py:34
+msgid "terms"
+msgstr "Bedingungen"
+
+#: termsandconditions/models.py:37
+msgid "IP Address"
+msgstr "IP-Adresse"
+
+#: termsandconditions/models.py:40
+msgid "Date Accepted"
+msgstr "Zustimmungsdatum"
+
+#: termsandconditions/models.py:47 termsandconditions/models.py:48
+msgid "User Terms and Conditions"
+msgstr "Nutzerzustimmung"
+
+#: termsandconditions/models.py:63
+msgid "name"
+msgstr "Name"
+
+#: termsandconditions/models.py:71
+msgid "version number"
+msgstr "Versionsnummer"
+
+#: termsandconditions/models.py:73
+msgid "text"
+msgstr "Text"
+
+#: termsandconditions/models.py:77
+msgid "Provide users with some info about what's changed and why"
+msgstr "Stelle den Nutzern Informationen darüber zur Verfügung, was sich verändert hat."
+
+#: termsandconditions/models.py:78
+msgid "info"
+msgstr "Info"
+
+#: termsandconditions/models.py:83
+msgid "Leave Null To Never Make Active"
+msgstr ""
+
+#: termsandconditions/models.py:84
+msgid "date active"
+msgstr ""
+
+#: termsandconditions/templates/termsandconditions/snippets/termsandconditions.html:15
+msgid "Our Terms and Conditions Have Changed"
+msgstr "Unsere Nutzungsbedingungen haben sich geändert"
+
+#: termsandconditions/templates/termsandconditions/snippets/termsandconditions.html:16
+msgid "Close"
+msgstr "schließen"
+
+#: termsandconditions/templates/termsandconditions/snippets/termsandconditions.html:26
+msgid "Please, review and accept the changes to prevent future interruptions."
+msgstr "Bitte akzeptiere die veränderten Nutzungsbedingungen, um unsere Seite weiterhin nutzen zu können."
+
+#: termsandconditions/templates/termsandconditions/snippets/termsandconditions.html:29
+msgid "ACCEPT ALL"
+msgstr "ALLE AKZEPTIEREN"
+
+#: termsandconditions/templates/termsandconditions/tc_accept_terms.html:5
+msgid "Accept Terms and Conditions"
+msgstr "Nutzungsbedingungen akzeptieren"
+
+#: termsandconditions/templates/termsandconditions/tc_accept_terms.html:10
+msgid "Terms and conditions"
+msgstr "Nutzungsbedingungen"
+
+#: termsandconditions/templates/termsandconditions/tc_accept_terms.html:14
+msgid "Please accept our"
+msgstr "Bitte akzeptiere unsere"
+
+#: termsandconditions/templates/termsandconditions/tc_accept_terms.html:16
+msgid "version"
+msgstr "Version"
+
+#: termsandconditions/templates/termsandconditions/tc_accept_terms.html:24
+msgid "I accept the terms of the"
+msgstr "Ich akzeptiere die"
+
+#: termsandconditions/templates/termsandconditions/tc_accept_terms.html:24
+msgid "All"
+msgstr "alle"
+
+#: termsandconditions/templates/termsandconditions/tc_email_terms.html:5
+#: termsandconditions/templates/termsandconditions/tc_print_terms.html:29
+msgid "Version"
+msgstr "Version"
+
+#: termsandconditions/templates/termsandconditions/tc_email_terms_form.html:5
+msgid "Email Terms and Conditions"
+msgstr "Nutzungsbedingungen per E-Mail zusenden"
+
+#: termsandconditions/templates/termsandconditions/tc_email_terms_form.html:9
+msgid "Email"
+msgstr "E-Mail"
+
+#: termsandconditions/templates/termsandconditions/tc_email_terms_form.html:12
+msgid "Email To:"
+msgstr "E-Mail an:"
+
+#: termsandconditions/templates/termsandconditions/tc_email_terms_form.html:14
+msgid "You Requested:"
+msgstr "Du hast angefragt:"
+
+#: termsandconditions/templates/termsandconditions/tc_email_terms_form.html:15
+msgid "Send"
+msgstr "senden"
+
+#: termsandconditions/templates/termsandconditions/tc_print_terms.html:6
+msgid "Print Terms and Conditions"
+msgstr "Nutzungsbedingungen ausdrucken"
+
+#: termsandconditions/templates/termsandconditions/tc_view_terms.html:6
+msgid "View Terms and Conditions"
+msgstr "Nutzungsbedingungen ansehen"
+
+#: termsandconditions/templates/termsandconditions/tc_view_terms.html:22
+msgid "Print"
+msgstr "drucken"
+
+#: termsandconditions/templates/termsandconditions/tc_view_terms.html:24
+msgid "No terms defined."
+msgstr "Keine Nutzungsbedingungen definiert."
+
+#: termsandconditions/templates/termsandconditions/tc_view_terms.html:27
+msgid "No terms for you to accept."
+msgstr "Keine Nutzungsbedingungen verfügbar."
+
+#: termsandconditions/views.py:197
+msgid "Terms"
+msgstr "Nutzungsbedingungen"
+
+#: termsandconditions/views.py:204
+msgid "Terms and Conditions Sent."
+msgstr "Nutzungsbedingungen gesendet."
+
+#: termsandconditions/views.py:210
+msgid "An Error Occurred Sending Your Message."
+msgstr "Ein Fehler ist beim Senden der Nachricht aufgetreten."
+
+#: termsandconditions/views.py:220
+msgid "Invalid Email Address."
+msgstr "Ungültige E-Mail-Adresse."
