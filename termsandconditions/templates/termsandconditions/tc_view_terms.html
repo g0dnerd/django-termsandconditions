@@ -13,7 +13,8 @@
     <section title="{% trans 'Terms and Conditions' %}" data-role="content">
         {% for terms in terms_list %}
             {% if terms %}
-                <h1>{% trans terms.name|safe %} {% trans 'version' %} {{ terms.version_number|floatformat:0|safe }}</h1>
+                <h1>{% trans terms.name|safe %}</h1>
+                <h4>{% trans 'version' %} {{ terms.version_number|floatformat:0|safe }}</h4>
 
                 <div class="toc-container">
                     {{ terms.text|safe }}

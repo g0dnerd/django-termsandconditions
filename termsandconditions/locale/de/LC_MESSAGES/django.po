@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 01:07-0600\n"
+"POT-Creation-Date: 2024-08-12 01:16-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: termsandconditions/admin.py:17 termsandconditions/apps.py:14
 #: termsandconditions/models.py:95 termsandconditions/models.py:96
 #: termsandconditions/templates/termsandconditions/tc_accept_terms.html:8
 #: termsandconditions/templates/termsandconditions/tc_email_terms_form.html:8
 #: termsandconditions/templates/termsandconditions/tc_view_terms.html:13
 msgid "Terms and Conditions"
-msgstr ""
+msgstr "Nutzungsbedingungen"
 
 #: termsandconditions/models.py:28
 msgid "user"
@@ -59,7 +60,9 @@ msgstr "Text"
 
 #: termsandconditions/models.py:77
 msgid "Provide users with some info about what's changed and why"
-msgstr "Stelle den Nutzern Informationen darüber zur Verfügung, was sich verändert hat."
+msgstr ""
+"Stelle den Nutzern Informationen darüber zur Verfügung, was sich verändert "
+"hat."
 
 #: termsandconditions/models.py:78
 msgid "info"
@@ -71,7 +74,7 @@ msgstr ""
 
 #: termsandconditions/models.py:84
 msgid "date active"
-msgstr ""
+msgstr "gültig ab"
 
 #: termsandconditions/templates/termsandconditions/snippets/termsandconditions.html:15
 msgid "Our Terms and Conditions Have Changed"
@@ -83,7 +86,9 @@ msgstr "schließen"
 
 #: termsandconditions/templates/termsandconditions/snippets/termsandconditions.html:26
 msgid "Please, review and accept the changes to prevent future interruptions."
-msgstr "Bitte akzeptiere die veränderten Nutzungsbedingungen, um unsere Seite weiterhin nutzen zu können."
+msgstr ""
+"Bitte akzeptiere die veränderten Nutzungsbedingungen, um unsere Seite "
+"weiterhin nutzen zu können."
 
 #: termsandconditions/templates/termsandconditions/snippets/termsandconditions.html:29
 msgid "ACCEPT ALL"
@@ -102,6 +107,7 @@ msgid "Please accept our"
 msgstr "Bitte akzeptiere unsere"
 
 #: termsandconditions/templates/termsandconditions/tc_accept_terms.html:16
+#: termsandconditions/templates/termsandconditions/tc_view_terms.html:16
 msgid "version"
 msgstr "Version"
 
@@ -147,14 +153,10 @@ msgid "View Terms and Conditions"
 msgstr "Nutzungsbedingungen ansehen"
 
 #: termsandconditions/templates/termsandconditions/tc_view_terms.html:22
-msgid "Print"
-msgstr "drucken"
-
-#: termsandconditions/templates/termsandconditions/tc_view_terms.html:24
 msgid "No terms defined."
 msgstr "Keine Nutzungsbedingungen definiert."
 
-#: termsandconditions/templates/termsandconditions/tc_view_terms.html:27
+#: termsandconditions/templates/termsandconditions/tc_view_terms.html:25
 msgid "No terms for you to accept."
 msgstr "Keine Nutzungsbedingungen verfügbar."
 
@@ -173,3 +175,6 @@ msgstr "Ein Fehler ist beim Senden der Nachricht aufgetreten."
 #: termsandconditions/views.py:220
 msgid "Invalid Email Address."
 msgstr "Ungültige E-Mail-Adresse."
+
+#~ msgid "Print"
+#~ msgstr "drucken"
